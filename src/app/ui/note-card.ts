@@ -58,9 +58,11 @@ import {
 		</div>
 	`
 })
+
 export class NoteCard {
 	@Input() note = {};
 	@Output() checked = new EventEmitter();
+
 	showCheck: boolean = false;
 
 	toggleCheck() {
