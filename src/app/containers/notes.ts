@@ -3,10 +3,6 @@ import { NoteCard, NoteCreator } from '../ui';
 
 @Component({
 	selector: 'notes-container',
-	directives: [
-		NoteCard,
-		NoteCreator
-	],
 	styles: [`
 	.notes {
 		padding-top: 50px;
