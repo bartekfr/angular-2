@@ -2,9 +2,9 @@ import { NgModule }      from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic'
-import { App, providers} from './app'
+import { App, providers, routes} from './app'
 import { HttpModule } from '@angular/http'
-import { Main, Notes } from './app/containers'
+import { Main, Notes, About } from './app/containers'
 import { AppBar, NoteCard, NoteCreator, ColorPicker } from './app/ui'
 
 @NgModule({
@@ -15,10 +15,11 @@ import { AppBar, NoteCard, NoteCreator, ColorPicker } from './app/ui'
 		NoteCard,
 		Notes,
 		NoteCreator,
-		ColorPicker
+		ColorPicker,
+		About
 	],
 	providers,
-	imports: [BrowserModule, FormsModule, HttpModule ],
+	imports: [BrowserModule, FormsModule, HttpModule, routes ],
 	bootstrap: [App]
 })
 export class AppModule {}

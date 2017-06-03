@@ -5,7 +5,7 @@ import { Main } from './containers';
 	selector: 'app',
 	template: `
 		<div>
-			<main-container></main-container>
+			<router-outlet></router-outlet>
 		</div>
 	`
 })
